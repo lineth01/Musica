@@ -16,53 +16,55 @@
 </head>
 
 <body>
-    <main>
-        <!--parte A del reproductor-->
-        <section>
+    <main class="main">
+        <div class="main__A">
+         <!--parte A del reproductor-->
+            <section class="main__A__portada">
 
-            <!--portada de la cancion-->
-            <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="">
+                    <!--portada de la cancion-->
+                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="">
 
-            <!--titulo de la cancion-->
+                <!--titulo de la cancion-->
+                <div>
+                <h3>Physical</h3>
+                <img src="/assets/Vector.png" alt="">
+                <h4>Dua Lipa</h4>
+                </div>
+            
+            </section>
+
+         <!--la linea de reproduccion con el tiempo-->
+         <section class="main__A__portada__tiempo">
+            <input type="range" value="20" min="0" class="player__level">
             <div>
-            <h3>Physical</h3>
-            <img src="/assets/Vector.png" alt="">
-            <h4>Dua Lipa</h4>
+                <p>0:44</p>
+                <p>4:04</p>
             </div>
-        
-        </section>
+         </section>
 
-      <!--la linea de reproduccion con el tiempo-->
-      <section>
-        <input type="range" value="20" min="0" class="player__level">
-        <div>
-            <p>0:44</p>
-            <p>4:04</p>
+         <!--sección de reproductor-->
+         <section class="main__A__portada__tiempo__reproductor">
+            <div>
+                <!--aleatorio-->
+                <button><img src="/assets/aleatorio 1.png" alt=""></button>
+
+                <!--retrocede-->
+                <button><img src="/assets/Frame.png" alt=""></button>
+
+                <!--play o pause-->
+                <button><img src="/assets/Frame (1).png" alt=""></button>
+
+                <!--adelanta-->
+                <button><img src="/assets/Frame (2).png" alt=""></button>
+
+                <!--repetir-->
+                <button><img src="/assets/repetir 1.png" alt=""></button>
+            </div>
+            </section>
         </div>
-      </section>
 
-      <!--sección de dale play-->
-      <section>
-        <div>
-            <!--aleatorio-->
-            <button><img src="/assets/aleatorio 1.png" alt=""></button>
-
-            <!--retrocede-->
-            <button><img src="/assets/Frame.png" alt=""></button>
-
-            <!--play o pause-->
-            <button><img src="/assets/Frame (1).png" alt=""></button>
-
-            <!--adelanta-->
-            <button><img src="/assets/Frame (2).png" alt=""></button>
-
-            <!--repetir-->
-            <button><img src="/assets/repetir 1.png" alt=""></button>
-        </div>
-    </section>
-
-    <!--parte B del reproductor-->
-    <aside>
+     <!--parte B del reproductor-->
+     <aside class="main__B">
 
         <!--botones-->
         <div>
@@ -115,7 +117,7 @@
             </div>
          </div>
 
-    </aside>
+     </aside>
 
     </main>
 
