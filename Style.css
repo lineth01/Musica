@@ -26,9 +26,92 @@ body {
     flex-direction: column;
 }
 
-.main__B {
+.main__A__portada {
     display: flex;
-    align-items: end;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+.main__A__portada__contenido {
+    display: flex;
+    align-items: start;
     justify-content: start;
     flex-direction: column;
+    padding: 10px;
+}
+
+.main__A__portada__contenido h3 {
+    color: aliceblue;
+}
+
+.main__A__portada__contenido h4 {
+    color: #907BB1;
+}
+
+/* / falta maquetar esta parte para que se vea el titulo de la cancion
+abajo el artista y a la derecha el corazon */
+
+.main__A__reproduccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__A__reproduccion__player {
+    width: 80%;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-top: 40px; 
+}
+
+.main__A__reproduccion__player::-webkit-slider-runnable-track {
+    background-color: #907BB1;
+    height: 6px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+.main__A__reproduccion__numeros {
+    color: #907BB1;
+    margin-top: -30px;
+    display: flex;
+    width: 78%;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.main__A__iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+
+.main__B {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }

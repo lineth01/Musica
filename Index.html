@@ -22,29 +22,32 @@
             <section class="main__A__portada">
 
                     <!--portada de la cancion-->
-                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="">
+                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="" width="400" height="400">
 
                 <!--titulo de la cancion-->
-                <div>
+                <div class="main__A__portada__contenido">
                 <h3>Physical</h3>
-                <img src="/assets/Vector.png" alt="">
                 <h4>Dua Lipa</h4>
+                </div>
+
+                <div class="main__A__portada__contenido__icono">
+                    <img src="/assets/Vector.png" alt="">
                 </div>
             
             </section>
 
          <!--la linea de reproduccion con el tiempo-->
-         <section class="main__A__portada__tiempo">
-            <input type="range" value="20" min="0" class="player__level">
-            <div>
+         <section class="main__A__reproduccion">
+            <input type="range" value="20" min="0" class="main__A__reproduccion__player">
+
+            <div class="main__A__reproduccion__numeros">
                 <p>0:44</p>
                 <p>4:04</p>
             </div>
          </section>
 
          <!--sección de reproductor-->
-         <section class="main__A__portada__tiempo__reproductor">
-            <div>
+         <section class="main__A__iconos">
                 <!--aleatorio-->
                 <button><img src="/assets/aleatorio 1.png" alt=""></button>
 
@@ -59,7 +62,6 @@
 
                 <!--repetir-->
                 <button><img src="/assets/repetir 1.png" alt=""></button>
-            </div>
             </section>
         </div>
 
@@ -122,3 +124,4 @@
     </main>
 
 </body>
+</html>
