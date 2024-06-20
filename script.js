@@ -37,22 +37,3 @@ const user = {
 console.log(tipoString)
 
 
-
-axios.get('https://leonardoapi.onrender.com/songs')
-.then((res) => {
-
-    const songlist = res.data.songs
-
-    const tracklist = document.getElementById("track-list")
-
-    songlist.map((song) => {
-        console.log(song)
-
-        const div = document.getElementById('div')
-        div.classList.add()
-
-    })
-
-
-
-})

@@ -19,6 +19,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* / parte A del reproductor*/
 .main__A {
     display: flex;
     align-items: center;
@@ -39,7 +41,6 @@ body {
     display: flex;
     align-items: start;
     justify-content: start;
-    flex-direction: column;
     padding: 10px;
 }
 
@@ -50,6 +51,7 @@ body {
 .main__A__portada__contenido h4 {
     color: #907BB1;
 }
+
 
 /* / falta maquetar esta parte para que se vea el titulo de la cancion
 abajo el artista y a la derecha el corazon */
@@ -77,13 +79,6 @@ abajo el artista y a la derecha el corazon */
 }
 
 
-
-
-
-
-
-
-
 .main__A__reproduccion__numeros {
     color: #907BB1;
     margin-top: -30px;
@@ -95,11 +90,6 @@ abajo el artista y a la derecha el corazon */
 }
 
 
-
-
-
-
-
 .main__A__iconos {
     display: flex;
     justify-content: center;
@@ -107,6 +97,24 @@ abajo el artista y a la derecha el corazon */
     padding: 30px 60px;
 }
 
+.main__A__iconos button {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    margin-top: 20px;
+    margin-inline: 35px;
+}
+
+
+
+
+
+
+
+
+
+/* / parte B del reproductor*/
 
 .main__B {
     display: flex;
@@ -115,3 +123,4 @@ abajo el artista y a la derecha el corazon */
     flex-direction: column;
     
 }
+
