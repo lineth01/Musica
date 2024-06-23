@@ -35,5 +35,3 @@ const user = {
 }
 
 console.log(tipoString)
-
-

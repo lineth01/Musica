@@ -28,94 +28,118 @@
 
                 <!--titulo de la cancion-->
                 <div class="main__A__portada__contenido">
-                    <h3>Physical</h3>
-                    <h4>Dua Lipa</h4>
-                    <img src="/assets/Vector.png" alt="">
+                    <div>
+                        <h3>Physical</h3>
+                        <h4>Dua Lipa</h4>
+                    </div>
+                    <img src="/assets/Vector.png" alt="" width="25" height="25" class="main__A__portada__contenido__corazon">                    
                 </div>
             
             </section>
 
          <!--la linea de reproduccion con el tiempo-->
          <section class="main__A__reproduccion">
+         
             <input type="range" value="20" min="0" class="main__A__reproduccion__player">
 
             <div class="main__A__reproduccion__numeros">
-                <p>0:44</p>
-                <p>4:04</p>
+                <span>00:00</span>
+                <span>00:00</span>
             </div>
+            
          </section>
 
          <!--sección de reproductor-->
          <section class="main__A__iconos">
                 <!--aleatorio-->
-                <button><img src="/assets/aleatorio 1.png" alt=""></button>
+                <span id="span1"><img src="/assets/aleatorio 1.png" alt="" width="40" height="40"></span>
 
                 <!--retrocede-->
-                <button><img src="/assets/Frame.png" alt=""></button>
+                <span id="span2"><img src="/assets/Frame.png" alt="" width="40" height="40"></span>
 
                 <!--play o pause-->
-                <button><img src="/assets/Frame (1).png" alt=""></button>
+                <span id="span3"><img src="/assets/Frame (1).png" alt="" width="40" height="40"></span>
 
                 <!--adelanta-->
-                <button><img src="/assets/Frame (2).png" alt=""></button>
+                <span id="span4"><img src="/assets/Frame (2).png" alt="" width="40" height="40"></span>
 
                 <!--repetir-->
-                <button><img src="/assets/repetir 1.png" alt=""></button>
+                <span id="span5"><img src="/assets/repetir 1.png" alt="" width="40" height="40"></span>
             </section>
+
         </div>
 
      <!--parte B del reproductor-->
      <aside class="main__B">
 
         <!--botones-->
-        <div>
+        <div class="main__B__botones">
             <button>Song</button>
             <button>Album</button>
             <button>Artist</button>
         </div>
 
         <!--buscar-->
-        <div>
+        <div class="main__B__buscar">
             <input type="text" placeholder="Search">
-            <button><img src="/assets/lupa 1.png" alt=""></button>
+            <button><img src="/assets/Frame 2.png" alt="" width="27" height="27"></button>
         </div>
 
          <!--Lista de las canciones-->
-         <div id="track-list">
+         <div id="track-list" class="main__B__songs">
             
              <!--primera-->
-            <div class="main__B__song">
-                <h2>Physical</h2>
-                <img src="/assets/sonido-de-onda 1.png" alt="">
-                <h4>Dua Lipa</h4>
+            <div class="main__B__songs__song1">
+                <div class="main__B__songs__song1__titulo">
+                    <h2>Physical</h2>
+                    <h4>Dua Lipa</h4>
+                </div>
+                
+                <img src="/assets/sonido-de-onda 1.png" alt="" width="25" height="25">
             </div>
 
             <!--segunda-->
-            <div>
-                <h2>Chained To The Rhythm</h2>
+
+            <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Chained To The Rhythm</h2>
+                    <h4>Katy Perry</h4>
+                </div>
+                
                 <p>4:00</p>
-                <h4>Katy Perry</h4>
             </div>
 
             <!--tercera-->
-            <div>
-                <h2>Blinding Lights</h2>
+            <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Blinding Lights</h2>
+                    <h4>The Weeknd</h4>
+                </div>
+                
                 <p>4:23</p>
-                <h4>The Weeknd</h4>
+                
             </div>
 
              <!--cuarta-->
-             <div>
-                <h2>I Follow Rivers</h2>
+             <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>I Follow Rivers</h2>
+                     <h4>Lykke Li</h4>
+                </div>
+                
                 <p>3:43</p>
-                <h4>Lykke Li</h4>
+               
             </div>
 
             <!--ultima-->
-            <div>
-                <h2>Good Times</h2>
+            <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Good Times</h2>
+                    <h4>Samuel Jack</h4>
+                </div>
+                
                 <p>3:15</p>
-                <h4>Samuel Jack</h4>
+                
             </div>
          </div>
 
