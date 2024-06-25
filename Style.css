@@ -1,3 +1,5 @@
+
+/*base de la pagina*/
 * {
     margin: unset;
     padding: unset;
@@ -20,6 +22,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+
 /* / parte A del reproductor*/
 .main__A {
     display: flex;
@@ -29,6 +32,8 @@ body {
     margin-top: -80px;
 }
 
+
+/*la portada con su imagen :3*/
 .main__A__portada {
     display: flex;
     align-items: start;
@@ -40,16 +45,18 @@ body {
 }
 
 .main__A__portada img {
-    margin-left: 190px;
+    margin-left: 170px;
+    margin-bottom: 5px;
 }
 
+
+/*el titulo de la cancion en reproduccion*/
 .main__A__portada__contenido {
     display: flex;
     align-items: start;
     justify-content: start;
     padding: 10px;
     gap: 25rem;
-    margin-left: -6rem;
     margin-left: 2px;
 }
 
@@ -64,6 +71,21 @@ body {
     font-weight: normal;
 }
 
+
+/*el corazon al lado del titulo*/
+.main__A__portada__contenido__corazon img:last-child {
+    display: none;
+}
+.main__A__portada__contenido__corazon:hover img:last-child {
+    display: block;
+}
+.main__A__portada__contenido__corazon:hover img:first-child {
+    display: none;
+}
+ 
+
+
+/*barra de reproduccion*/
 .main__A__reproduccion {
     display: flex;
     align-items: center;
@@ -76,7 +98,7 @@ body {
     outline: none;
     border: none;
     margin-top: 40px; 
-    width: 465%;
+    width: 450%;
     height: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -99,6 +121,8 @@ body {
     border-radius: 3px;
 }
 
+
+/*tiempo de la cancion reproduciendo*/
 .main__A__reproduccion__numeros {
     color: #6A45AF;
     margin-top: 30px;
@@ -110,6 +134,8 @@ body {
     margin-left: -400px;
 }
 
+
+/*botones de reproduccion*/
 .main__A__iconos {
     display: flex;
     justify-content: center;
@@ -125,9 +151,63 @@ body {
 }
 
 
+/* para cambiar de color los botones*/
 
+/*play y pause*/
 
+.main__A__iconos__play img:last-child {
+    display: none;
+}
+.main__A__iconos__play:hover img:last-child {
+    display: block;
+}
+.main__A__iconos__play:hover img:first-child {
+    display: none;
+}
 
+/*adelantar*/
+.main__A__iconos__adelante img:last-child {
+    display: none;
+}
+.main__A__iconos__adelante:hover img:last-child {
+    display: block;
+}
+.main__A__iconos__adelante:hover img:first-child {
+    display: none;
+}
+
+/*aleatorio*/
+.main__A__iconos__aleatorio img:last-child {
+    display: none;
+}
+.main__A__iconos__aleatorio:hover img:last-child {
+    display: block;
+}
+.main__A__iconos__aleatorio:hover img:first-child {
+    display: none;
+}
+
+/*atras*/
+.main__A__iconos__atras img:last-child {
+    display: none;
+}
+.main__A__iconos__atras:hover img:last-child {
+    display: block;
+}
+.main__A__iconos__atras:hover img:first-child {
+    display: none;
+}
+
+/*repetir*/
+.main__A__iconos__repetir img:last-child {
+    display: none;
+}
+.main__A__iconos__repetir:hover img:last-child {
+    display: block;
+}
+.main__A__iconos__repetir:hover img:first-child {
+    display: none;
+}
 
 
 
@@ -149,6 +229,8 @@ body {
 
 }
 
+
+/*botones de arriba*/
 .main__B__botones button{
     display: inline;
     justify-content: center;
@@ -161,17 +243,21 @@ body {
     color: #907BB1;
 }
 
+.main__B__botones button:hover {
+    background: #907BB1;
+    box-shadow: 0 0 10px #907BB1, 0 0 40px #907BB1, 0 0 80px #907BB1;
+    transition-delay: 0.5ms;
+    color: aliceblue;
+}
+
+
+/*la barra del buscador*/
 .main__B__buscar {
     display: inline;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin-left: -20px;
-}
-
-.main__B__buscar button {
-    background: none;
-    position: absolute;
 }
 
 .main__B__buscar input {
@@ -182,8 +268,18 @@ body {
     border-style: solid;
     border-color: #907BB1;
     border-width: 1px;
+    color: aliceblue;
 }
 
+.main__B__buscar button {
+    background: none;
+    position: absolute;
+}
+
+
+/*las canciones*/
+
+/*la primera cancion que suena*/
 .main__B__songs {
     display: inline;
     justify-content: center;
@@ -207,6 +303,8 @@ body {
     color: aliceblue;
 }
 
+
+/*el resto de las canciones*/
 .main__B__songs__songcita {
     display: inline;
     flex-direction: column;

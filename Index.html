@@ -17,6 +17,12 @@
 
 </head>
 
+
+
+
+
+
+
 <body>
     <main class="main">
         <div class="main__A">
@@ -32,7 +38,11 @@
                         <h3>Physical</h3>
                         <h4>Dua Lipa</h4>
                     </div>
-                    <img src="/assets/Vector.png" alt="" width="25" height="25" class="main__A__portada__contenido__corazon">                    
+                    <div class="main__A__portada__contenido__corazon">
+                        <img src="/assets/Vector.png" alt="" width="25" height="25">
+                        <img src="/assets/corazon.png" alt="" width="25" height="25">
+                    </div>
+                  
                 </div>
             
             </section>
@@ -40,7 +50,7 @@
          <!--la linea de reproduccion con el tiempo-->
          <section class="main__A__reproduccion">
          
-            <input type="range" value="20" min="0" class="main__A__reproduccion__player">
+            <input type="range" value="0" min="0" class="main__A__reproduccion__player">
 
             <div class="main__A__reproduccion__numeros">
                 <span>00:00</span>
@@ -52,22 +62,42 @@
          <!--sección de reproductor-->
          <section class="main__A__iconos">
                 <!--aleatorio-->
-                <span id="span1"><img src="/assets/aleatorio 1.png" alt="" width="40" height="40"></span>
+                <span id="span1" class="main__A__iconos__aleatorio">
+                    <img src="/assets/aleatorio 1.png" alt="" width="40" height="40">
+                    <img src="/assets/aleatorio2.png" alt="" width="40" height="40">
+                </span>
 
                 <!--retrocede-->
-                <span id="span2"><img src="/assets/Frame.png" alt="" width="40" height="40"></span>
+                <span id="span2" class="main__A__iconos__atras">
+                    <img src="/assets/Frame.png" alt="" width="40" height="40">
+                    <img src="/assets/atras.png" alt="" width="40" height="40">
+                </span>
 
                 <!--play o pause-->
-                <span id="span3"><img src="/assets/Frame (1).png" alt="" width="40" height="40"></span>
+                <span id="span3" class="main__A__iconos__play">
+                    <img src="/assets/play.svg" alt="" width="40" height="40">
+                    <img src="/assets/play2.png" alt="" width="40" height="40">
+                </span>
 
                 <!--adelanta-->
-                <span id="span4"><img src="/assets/Frame (2).png" alt="" width="40" height="40"></span>
+                <span id="span4" class="main__A__iconos__adelante">
+                    <img src="/assets/Frame (2).png" alt="" width="40" height="40">
+                    <img src="/assets/adelante.png" alt="" width="40" height="40">
+                </span>
 
                 <!--repetir-->
-                <span id="span5"><img src="/assets/repetir 1.png" alt="" width="40" height="40"></span>
+                <span id="span5" class="main__A__iconos__repetir">
+                    <img src="/assets/repetir 1.png" alt="" width="40" height="40">
+                    <img src="/assets/repetir2.png" alt="" width="40" height="40">
+                </span>
             </section>
 
         </div>
+
+
+
+
+
 
      <!--parte B del reproductor-->
      <aside class="main__B">

@@ -35,3 +35,33 @@ const user = {
 }
 
 console.log(tipoString)
+
+
+
+
+
+axios.get('https://leonardoapi.onrender.com/songs')
+    .then((res) => {
+        // Guardo la lista de canciones
+        const songList = res.data.songs
+
+        const trackList = document.getElementById('track-list')
+
+        // recorriendo la lista de canciones
+        songList.map((song) => {
+            // Por cada canción
+
+            const div = document.createElement('div')
+            div.classList.add('song')
+
+            div.innerHTML = `
+                <h2>${song.title}</h2>
+                <h4>${song.author}</h4>
+                <p>${song.duration}</p>
+            `
+
+            trackList.appendChild(div)
+            
+            console.log(---)
+        })
+    })
