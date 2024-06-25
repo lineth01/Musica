@@ -52,16 +52,20 @@ axios.get('https://leonardoapi.onrender.com/songs')
             // Por cada canción
 
             const div = document.createElement('div')
-            div.classList.add('song')
+            // div.classList.add('song')
+            div.classList.add('main__B__songs__songcita')
 
             div.innerHTML = `
-                <h2>${song.title}</h2>
-                <h4>${song.author}</h4>
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>${song.title}</h2>
+                    <h4>${song.author}</h4>
+                </div>
+                
                 <p>${song.duration}</p>
             `
 
             trackList.appendChild(div)
             
-            console.log(---)
+            // console.log(---)
         })
     })
