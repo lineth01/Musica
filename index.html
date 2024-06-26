@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords"
+        content="Reproductor, audio, Dispositivo, Música, portátil, Altavoz, Lista, Auricular, Biblioteca, Ecualizador, ">
+
+    <meta name="description"
+        content="¿Buscas el reproductor de música perfecto? ¡No busques más! este es el reproductor perfecto para cualquier persona que ama escuchar música. Con su sonido de alta calidad, amplias funciones y diseño elegante, este reproductor es la mejor manera de disfrutar de tu música favorita.">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+
+
+
+
+
+
+<body>
+    <main class="main">
+        <div class="main__A">
+         <!--parte A del reproductor-->
+            <section class="main__A__portada">
+
+                    <!--portada de la cancion-->
+                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="" width="400" height="400" id="portada">
+
+                <!--titulo de la cancion-->
+                <div class="main__A__portada__contenido">
+                    <div>
+                        <h3 id="titulo">Physical</h3>
+                        <h4 id="autor">Dua Lipa</h4>
+                    </div>
+                    <div class="main__A__portada__contenido__corazon">
+                        <img src="/assets/Vector.png" alt="" width="25" height="25">
+                        <img src="/assets/corazon.png" alt="" width="25" height="25">
+                    </div>
+                  
+                </div>
+            
+            </section>
+
+         <!--la linea de reproduccion con el tiempo-->
+         <section class="main__A__reproduccion">
+         
+            <input type="range" value="0" min="0" class="main__A__reproduccion__player">
+
+
+            <audio src="" class="main__A__reproduccion__player" id="audio" autoplay></audio>
+
+            <div class="main__A__reproduccion__numeros">
+                <span>00:00</span>
+                <span>00:00</span>
+            </div>
+            
+         </section>
+
+         <!--sección de reproductor-->
+         <section class="main__A__iconos">
+                <!--aleatorio-->
+                <span id="span1" class="main__A__iconos__aleatorio">
+                    <img src="/assets/aleatorio 1.png" alt="" width="40" height="40">
+                    <img src="/assets/aleatorio2.png" alt="" width="40" height="40">
+                </span>
+
+                <!--retrocede-->
+                <span id="span2" class="main__A__iconos__atras">
+                    <img src="/assets/Frame.png" alt="" width="40" height="40">
+                    <img src="/assets/atras.png" alt="" width="40" height="40">
+                </span>
+
+                <!--play o pause-->
+                <span id="span3" class="main__A__iconos__play">
+                    <img src="/assets/play.svg" alt="" width="40" height="40">
+                    <img src="/assets/play2.png" alt="" width="40" height="40">
+                </span>
+
+                <!--adelanta-->
+                <span id="span4" class="main__A__iconos__adelante">
+                    <img src="/assets/Frame (2).png" alt="" width="40" height="40">
+                    <img src="/assets/adelante.png" alt="" width="40" height="40">
+                </span>
+
+                <!--repetir-->
+                <span id="span5" class="main__A__iconos__repetir">
+                    <img src="/assets/repetir 1.png" alt="" width="40" height="40">
+                    <img src="/assets/repetir2.png" alt="" width="40" height="40">
+                </span>
+            </section>
+
+        </div>
+
+
+
+
+
+
+     <!--parte B del reproductor-->
+     <aside class="main__B">
+
+        <!--botones-->
+        <div class="main__B__botones">
+            <button>Song</button>
+            <button>Album</button>
+            <button>Artist</button>
+        </div>
+
+        <!--buscar-->
+        <div class="main__B__buscar">
+            <input type="text" placeholder="Search">
+            <button><img src="/assets/Frame 2.png" alt="" width="27" height="27"></button>
+        </div>
+
+        <div class="main__B__songs__song1">
+            <div class="main__B__songs__song1__titulo">
+                <h2 id="titulo_sonando">Physical</h2>
+                <h4 id="autor_sonando">Dua Lipa</h4>
+            </div>
+            
+            <img src="/assets/sonido-de-onda 1.png" alt="" width="25" height="25">
+        </div>
+         <!--Lista de las canciones-->
+         <div id="track-list" class="main__B__songs">
+            
+             <!--primera-->
+
+            <!--segunda-->
+
+            <!-- <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Chained To The Rhythm</h2>
+                    <h4>Katy Perry</h4>
+                </div>
+                
+                <p>4:00</p>
+            </div>
+
+            <!--tercera-->
+            <!-- <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Blinding Lights</h2>
+                    <h4>The Weeknd</h4>
+                </div>
+                
+                <p>4:23</p>
+                
+            </div> -->
+
+             <!--cuarta-->
+             <!-- <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>I Follow Rivers</h2>
+                     <h4>Lykke Li</h4>
+                </div>
+                
+                <p>3:43</p>
+               
+            </div> -->
+
+            <!--ultima-->
+            <!-- <div class="main__B__songs__songcita">
+                <div class="main__B__songs__songcita__titulos">
+                    <h2>Good Times</h2>
+                    <h4>Samuel Jack</h4>
+                </div>
+                
+                <p>3:15</p>
+            </div>  -->
+                
+         </div>
+
+     </aside>
+
+    </main>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
