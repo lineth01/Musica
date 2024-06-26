@@ -30,13 +30,13 @@
             <section class="main__A__portada">
 
                     <!--portada de la cancion-->
-                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="" width="400" height="400">
+                <img src="/assets/artworks-soTP54v5h1zr3RCd-krgt9Q-t500x500 1.jpg" alt="" width="400" height="400" id="portada">
 
                 <!--titulo de la cancion-->
                 <div class="main__A__portada__contenido">
                     <div>
-                        <h3>Physical</h3>
-                        <h4>Dua Lipa</h4>
+                        <h3 id="titulo">Physical</h3>
+                        <h4 id="autor">Dua Lipa</h4>
                     </div>
                     <div class="main__A__portada__contenido__corazon">
                         <img src="/assets/Vector.png" alt="" width="25" height="25">
@@ -51,6 +51,9 @@
          <section class="main__A__reproduccion">
          
             <input type="range" value="0" min="0" class="main__A__reproduccion__player">
+
+
+            <audio src="" class="main__A__reproduccion__player" id="audio" autoplay></audio>
 
             <div class="main__A__reproduccion__numeros">
                 <span>00:00</span>
@@ -117,8 +120,8 @@
 
         <div class="main__B__songs__song1">
             <div class="main__B__songs__song1__titulo">
-                <h2>Physical</h2>
-                <h4>Dua Lipa</h4>
+                <h2 id="titulo_sonando">Physical</h2>
+                <h4 id="autor_sonando">Dua Lipa</h4>
             </div>
             
             <img src="/assets/sonido-de-onda 1.png" alt="" width="25" height="25">
