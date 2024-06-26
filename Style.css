@@ -1,4 +1,6 @@
-
+::-webkit-scrollbar {
+    display: none;
+}
 /*base de la pagina*/
 * {
     margin: unset;
@@ -19,7 +21,7 @@ body {
 .main {
     padding: 20px 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-auto-rows: 100%;
     height: 100vh;
     overflow-y: hidden;
@@ -39,7 +41,7 @@ body {
 /*la portada con su imagen :3*/
 .main__A__portada {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     padding: 10px;
     color: aliceblue;
@@ -291,20 +293,24 @@ body {
     flex-grow: 1;
     color: #907BB1;
     width: 100%;
-    padding: 0 30px;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .main__B__songs__song1 {
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: space-between;
+    width: 100%;
     color: #907BB1;
 }
 
 .main__B__songs__song1 img {
     display: flex;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     margin-top: 13px;
 }
 
@@ -324,11 +330,11 @@ body {
     
 }
 
-.main__B__songs__songcita__titulos {
-    /* display:inline; */
+/* .main__B__songs__songcita__titulos {
+    display:inline;
     padding: 50px;
     
-}
+} */
 
 .main__B__songs__songcita p {
     display: flex; 
